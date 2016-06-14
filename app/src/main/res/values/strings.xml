@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FooyeMeet2</string>
+    <string name="facebook_app_id">1054306741312412</string>
+    <string name="fb_login_protocol_scheme">fb1054306741312412</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="accessToken">pk.eyJ1Ijoic3Rhcms5NSIsImEiOiJjaW5kZ2VtOGUwMDZnd2RtNXBwa3NyY29oIn0.0vgdYra_-PDdEoFjXgaY1Q</string>
+</resources>

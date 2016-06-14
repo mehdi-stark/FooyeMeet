@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#222">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:id="@+id/layout_profil1"
+    android:background="@drawable/bc_profil_web">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/base_padding"
+        android:background="@color/dark"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/image_profil"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/light"
+        android:id="@+id/view"
+        android:background="@drawable/image_profil_web"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:text="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/statue_conextionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="statut_connection"
+        android:gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:background="@drawable/buton_corner_round"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:layout_below="@+id/nameTV"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/layout_profil1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777C7E"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="65dp"
+            android:id="@+id/view3"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777C7E"
+            android:id="@+id/view2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#777C7E"
+            android:id="@+id/view4"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/view3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/ageProfile"
+            android:layout_marginStart="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:contextClickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nameProfile"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/ageProfile"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:clickable="true"
+            android:contextClickable="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

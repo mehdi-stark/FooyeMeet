@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tabs_profile"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_profile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/MyCustomTabLayout"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:tabIndicatorColor="#ec3a78"
+        android:background="#151414"/>
+    </android.support.design.widget.AppBarLayout>
+</RelativeLayout>

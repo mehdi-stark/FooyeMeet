@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".ui.MainActivity"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/titleImageView"
+        android:src="@mipmap/logo_fooyemeet"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:textColor="#ec3a78"
+        android:background="@android:color/white"
+        android:layout_marginBottom="59dp"
+        android:width="150dp"
+        android:layout_above="@+id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/loginEditText"
+        android:hint="Login"
+        android:layout_below="@+id/titleImageView"
+        android:layout_alignStart="@+id/password"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="password"
+        android:layout_below="@+id/loginEditText"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:id="@+id/registerButton"
+        android:textColor="#ec3a78"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:textColor="#ec3a78"
+        android:background="@android:color/white"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/titleImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="400dp"
+        android:layout_marginStart="400dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="You don&apos;t have account yet"
+        android:id="@+id/textView"
+        android:layout_above="@+id/registerButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
